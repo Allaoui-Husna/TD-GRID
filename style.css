@@ -1,37 +1,60 @@
 
 .ecran{
+    display: grid;
+    grid-column: 1/8;
     background-color: black;
     height: 100px;
+    color: aliceblue;
 }
 
 #calcul{
     place-items: center;
+    font-size: 15;
 }
 
 #resultat{
     place-items: center;
+    font-size: 60;
 }
 
 .touches{
-    background-color: lavender;
+    
     display: grid;
-    grid-template-columns: repeat(4,100px);
+    grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(4,100px);
+    grid-column: 1/4;
     place-items: center;
 }
 
 .touches2{
-    background-color: lavender;
+
     display: grid;
     grid-template-columns: repeat(2,200px);
-    grid-template-rows: repeat(2,25px);
+    grid-column: 1/4;
     place-items: center;
 }
 
-.calculette{
-    border: 10 px blueviolet;
-    height: 500px;
-    width: 440px;
+.fct{
+    display: grid;
+    grid-column: 4/4;
+    place-items: center;
 }
 
+.touches2 button{
+    height: 100px;
+    width: 200px;
+}
 
+.touches button, .fct button{
+    height: 100px;
+    width: 100px;
+}
+
+.calculette{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    border: 15px solid blueviolet;
+    background-color: lavender;
+    height: 600px;
+    width: 400px;
+}
